@@ -88,5 +88,13 @@ console.log(whatIsYourJob('business', 'Bicky'));
 console.log(whatIsYourJob('labour', 'Madan'));
 
 
+/* Array */
+var color = ['red', 'green', 'black'];
+var item = new Array('box', 'pencil', 'pen');
+
+console.log('color of ' + item[0] + ' is ' + color[0]);
+console.log('color of ' + item[1] + ' is ' + color[1]);
+console.log('color of ' + item[2] + ' is ' + color[2]);
+console.log('no. of items in item: ' + item.length);
 
 
