@@ -224,3 +224,8 @@ var test = {
 
 test.testingThis();
 
+/* Method Borrowing */
+jobinn.testingThis = test.testingThis;
+jobinn.testingThis();
+console.log(jobinn);
+console.log(jobinn.testingThis);
