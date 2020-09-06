@@ -20,8 +20,13 @@ else {
 
 (civilStatus === 'married') ? (console.log(firstName + " " + lastName + " is married")) : (console.log(firstName + " " + lastName + " is single"));
 
+civilStatus = 'none';
+
 switch (civilStatus) {
     case 'married' : console.log("Be a happy family.");
-    case 'single' : console.log("Marry soon :)");
+                     break;
+    case 'single' :  console.log("Marry soon :)");
+                     break;
+    default:         console.log("I guess you are a student");
 }
 
