@@ -114,4 +114,69 @@ console.log('after shift: ' + diffvariable);
 console.log(diffvariable.indexOf(1995));
 console.log(diffvariable.indexOf('jyotimoy'));
 
+/* Objects and properties */
+
+/* object literal */ 
+var john = {
+    firstName: 'John',
+    lastName: 'Sharma',
+    birthYear: 1996,
+    family: ['ravi', 'bob', 'smitha'],
+    job: false,
+    age: function(birthYear) {
+        return 2020 - birthYear;
+    }
+};
+
+console.log(john);
+console.log(john.firstName);
+console.log(john['lastName']);
+var x = 'family'
+console.log(john.x);
+console.log(john[x]);
+
+john.job = true;
+console.log(john);
+console.log(john.age(1990));
+console.log(john.age());
+console.log(john.age);
+
+var jobin = {
+    firstName: 'John',
+    lastName: 'Sharma',
+    birthYear: 1996,
+    family: ['ravi', 'bob', 'smitha'],
+    job: false,
+    calcAge: function() {
+        return 2020 - this.birthYear;
+    }
+};
+
+console.log(jobin);
+console.log(jobin.calcAge(1990));
+jobin.age = jobin.calcAge(); 
+console.log(jobin.age);
+console.log(jobin.calcAge);
+console.log(jobin);
+
+var jobinn = {
+    firstName: 'John',
+    lastName: 'Sharma',
+    birthYear: 1996,
+    family: ['ravi', 'bob', 'smitha'],
+    job: false,
+    calcAge: function() {
+        this.age = 2020 - this.birthYear;
+    }
+};
+
+jobinn.calcAge();
+console.log(jobinn.age);
+console.log(jobinn);
+
+/* New object syntax */
+var Inu = new Object();
+Inu.name = 'B M';
+Inu.birthdate = 4;
+console.log(Inu);
 
