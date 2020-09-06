@@ -8,6 +8,7 @@ console.log("Hello!! " + firstName + " " + lastName);
 var age = prompt('What is his age?');
 console.log(age);
 
+/*
 alert('let\'s go ahead!! :)');
 
 var civilStatus = 'single';
@@ -38,7 +39,9 @@ switch (true) {
     case age <= 10 : console.log("hi child!!");
     default : console.log("you're a human");
 }
+*/
 
+/* equality operators */
 var height = 0;
 
 height ? console.log('height is 0') : console.log('height is not 0');
@@ -55,5 +58,16 @@ if (height === '25')  //type checking before comparison
     console.log('=== operator found that compared values are equal along with data type');
 else
     console.log('=== operator found that compared values are not equal');
+
+/* function */
+function calculateAge (birthYear) {
+    return 2020 - birthYear;
+}
+
+var Jim = calculateAge(1985);
+var Subham = calculateAge(1996);
+var Raj = calculateAge(1993);
+
+console.log(Jim, Subham, Raj);
 
 
