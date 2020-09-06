@@ -5,10 +5,10 @@ var lastName = "Kakoty";
 
 console.log("Hello!! " + firstName + " " + lastName);
 
+/*
 var age = prompt('What is his age?');
 console.log(age);
 
-/*
 alert('let\'s go ahead!! :)');
 
 var civilStatus = 'single';
@@ -59,7 +59,7 @@ if (height === '25')  //type checking before comparison
 else
     console.log('=== operator found that compared values are not equal');
 
-/* function */
+/* function Statement */
 function calculateAge (birthYear) {
     return 2020 - birthYear;
 }
@@ -69,5 +69,24 @@ var Subham = calculateAge(1996);
 var Raj = calculateAge(1993);
 
 console.log(Jim, Subham, Raj);
+
+/* function expressions */
+var whatIsYourJob = function(job, firstName) {
+    switch(job) {
+        case 'IT': return firstName + ' is a IT professional';
+        case 'teacher': return firstName + ' teaches students';
+        case 'labour': return firstName + ' is a wage worker';
+        case 'business': return firstName + ' is a businessman';
+        default: return firstName + ' is self-employed';
+    }
+}
+
+console.log(whatIsYourJob('teacher', 'Shyam'));
+console.log(whatIsYourJob('IT', 'Jyotimoy'));
+console.log(whatIsYourJob('Business', 'Bicky'));
+console.log(whatIsYourJob('business', 'Bicky'));
+console.log(whatIsYourJob('labour', 'Madan'));
+
+
 
 
