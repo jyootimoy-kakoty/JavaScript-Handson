@@ -204,3 +204,23 @@ for (var i = 0; i < jobinn.length; i++) {
     else
         console.log(jobinn[i]);
 }
+
+
+/* Test this keyword in global and local conext */
+console.log(this);
+var test = {
+    firstName: 'John',
+    lastName: 'Sharma',
+    birthYear: 1996,
+    family: ['ravi', 'bob', 'smitha'],
+    job: false,
+    testingThis: function() {
+        function testing() {
+            console.log(this);
+        }
+        testing();
+    }
+};
+
+test.testingThis();
+
