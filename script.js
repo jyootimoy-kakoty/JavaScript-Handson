@@ -17,3 +17,11 @@ if (civilStatus === 'married') {
 else {
     console.log(firstName + " " + lastName + " will hopefully marry soon");
 }
+
+(civilStatus === 'married') ? (console.log(firstName + " " + lastName + " is married")) : (console.log(firstName + " " + lastName + " is single"));
+
+switch (civilStatus) {
+    case 'married' : console.log("Be a happy family.");
+    case 'single' : console.log("Marry soon :)");
+}
+
