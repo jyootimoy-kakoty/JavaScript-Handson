@@ -189,3 +189,18 @@ console.log(Inu);
 for (var i = 0; i < 10; i++) {
     console.log(i);
 }
+
+var random = new Array('box', 'pencil', 'pen', 23, 'book', 'globe', 30);
+for (var i = 0; i < random.length; i++) {
+    if (typeof random[i] !== 'string')
+        continue;
+    else
+        console.log(random[i]);
+}
+
+for (var i = 0; i < jobinn.length; i++) {
+    if (typeof jobinn[i] !== 'string')
+        break;
+    else
+        console.log(jobinn[i]);
+}
