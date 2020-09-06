@@ -98,3 +98,20 @@ console.log('color of ' + item[2] + ' is ' + color[2]);
 console.log('no. of items in item: ' + item.length);
 
 
+/* Different data types together & methods */
+var diffvariable = ['jyotimoy', 'kakoty', 1995, 'engineer', false];
+console.log(diffvariable);
+diffvariable.push('bengaluru');
+console.log('after push: ' + diffvariable);
+diffvariable.pop();
+console.log('after pop: ' + diffvariable);
+
+diffvariable.unshift('Mr');
+console.log('after unshift: ' + diffvariable);
+diffvariable.shift();
+console.log('after shift: ' + diffvariable);
+
+console.log(diffvariable.indexOf(1995));
+console.log(diffvariable.indexOf('jyotimoy'));
+
+
