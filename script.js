@@ -42,6 +42,7 @@ switch (true) {
 */
 
 /* equality operators */
+/*
 var height = 0;
 
 height ? console.log('height is 0') : console.log('height is not 0');
@@ -58,8 +59,10 @@ if (height === '25')  //type checking before comparison
     console.log('=== operator found that compared values are equal along with data type');
 else
     console.log('=== operator found that compared values are not equal');
+*/
 
 /* function Statement */
+/*
 function calculateAge (birthYear) {
     return 2020 - birthYear;
 }
@@ -69,8 +72,10 @@ var Subham = calculateAge(1996);
 var Raj = calculateAge(1993);
 
 console.log(Jim, Subham, Raj);
+*/
 
 /* function expressions */
+/*
 var whatIsYourJob = function(job, firstName) {
     switch(job) {
         case 'IT': return firstName + ' is a IT professional';
@@ -86,7 +91,7 @@ console.log(whatIsYourJob('IT', 'Jyotimoy'));
 console.log(whatIsYourJob('Business', 'Bicky'));
 console.log(whatIsYourJob('business', 'Bicky'));
 console.log(whatIsYourJob('labour', 'Madan'));
-
+*/
 
 /* Array */
 var color = ['red', 'green', 'black'];
@@ -180,3 +185,7 @@ Inu.name = 'B M';
 Inu.birthdate = 4;
 console.log(Inu);
 
+/* Loops */
+for (var i = 0; i < 10; i++) {
+    console.log(i);
+}
